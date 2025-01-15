@@ -3,7 +3,7 @@
 
 
 
-if(global.timeInGamesec == 60){
+if(global.timeInGamesec == 59){
 	global.timeInGameMin += 1;
 	global.timeInGamesec = 0;
 }else{

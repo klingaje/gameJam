@@ -3,7 +3,9 @@ audio_play_sound(snd_music_game, 0, true);
 
 global.timeInGameMin = 0;
 global.timeInGamesec = 0;
+global.bossSpawnCooldown = 0;
 alarm[0] = 60;
+alarm[1] = 3600;
 // Set the flag to say the game is not paused
 global.paused = false;
 

@@ -39,7 +39,7 @@ if (!instance_exists(obj_upgrade) && !instance_exists(obj_template_complete))
 		//with (obj_enemy) instance_destroy();
 	
 		// Destroy any bullets.
-		//with (obj_hero_bullet) instance_destroy();
+		with (obj_hero_bullet) instance_destroy();
 	
 		// Destroy any xp pickups.
 		//with (obj_collectable) instance_destroy();
@@ -79,4 +79,11 @@ if (!global.paused)
 		// Calls spawn enemy function.
 		spawn_enemy();	
 	}
+}
+function spawnBosses(bosNr){
+	//show_debug_message(string(bosNr));
+	//,obj_miniboss2,obj_miniboss3,obj_miniboss4,obj_boss paste in later
+	bossArray = [obj_miniboss1];
+	instance_create_layer(random(room_width), random(room_height), "Instances", bossArray[0]);
+	//replace 0 with bosNr-1
 }
