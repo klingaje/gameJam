@@ -9,8 +9,12 @@ function next_wave()
 	global.xp_goal = floor(global.xp_goal * 1.2);
 
 	// Decrease the time it takes to spawn enemies.
-	global.enemy_spawn_speed -= 3;
+	global.enemy_spawn_speed -= max(1, 1);
 
 	// Increase enemy health bonus, making all enemies slightly harder to kill each wave.
-	global.enemy_health_bonus = global.enemy_health_bonus * 1.25;
+	if(global.timeInGameMin % 5 == 0){
+		
+		global.enemy_health_bonus = global.enemy_health_bonus * 1.25;
+	}
+	
 }
