@@ -43,6 +43,8 @@ draw_set_valign(fa_middle);
 
 // Draw our current level.
 draw_text(1450, 65, "LV: " + string(global.level));
+draw_text(1600, 65, "time: " + string(global.timeInGameMin) + ":" + string(global.timeInGamesec));
+ 
 
 // Reset text alignments
 draw_set_halign(fa_left);

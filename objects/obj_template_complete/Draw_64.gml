@@ -1,4 +1,4 @@
-// Set color.
+ // Set color.
 // This will be a semi-transparent black.
 draw_set_colour(c_black);
 draw_set_alpha(0.5);

@@ -1,6 +1,9 @@
 // Start the game music on a loop.
 audio_play_sound(snd_music_game, 0, true);
 
+global.timeInGameMin = 0;
+global.timeInGamesec = 0;
+alarm[0] = 60;
 // Set the flag to say the game is not paused
 global.paused = false;
 
