@@ -18,6 +18,8 @@ global.level = 1;
 
 // Set the cooldown time for spawning enemies.
 global.enemy_spawn_speed = 60;
+global.trap_spawn_speed = 250;
+global.trap_despawn_speed = 700;
 
 // Set starting enemy health bonus.
 // This is a multiplier, and is increased each wave.
@@ -44,12 +46,16 @@ instance_create_layer(1820, 20, "UpgradeScreen", obj_pause_button);
 
 // Sets cooldown for enemy spawning time (from frames to seconds).
 spawn_enemy_cooldown = global.enemy_spawn_speed;
+spawn_trap_coodlown = global.trap_spawn_speed;
+spawn_trap_despawn = global.trap_despawn_speed;
 
 // Function handles enemy spawning.
 spawn_enemy = function()
 {
 	// Reset cooldown.
 	spawn_enemy_cooldown = global.enemy_spawn_speed;
+	spawn_trap_coodlown = global.trap_spawn_speed;
+	spawn_trap_despawn = global.trap_despawn_speed;
 
 	// If the game is paused
 	if (global.paused)
@@ -61,6 +67,7 @@ spawn_enemy = function()
 	// Declare a temp variable to hold an enemy type.
 	// By default this will be the pumpkill enemy.
 	var _enemy = obj_pumpkill;
+	var _trap = obj_spiderweb;
 
 	// If we are over level 2...
 	if (global.level > 2)
@@ -76,6 +83,7 @@ spawn_enemy = function()
 		// Change the enemy type to either
 		// pigun, pumpkill or rooster.
 		_enemy = choose(obj_pigun, obj_pumpkill, obj_rooster);
+		_trap = choose(obj_spiderweb, obj_carplant);
 	}
 
 	// We want to spawn enemyes around the player.
@@ -108,4 +116,6 @@ spawn_enemy = function()
 
 	// Create an enemy at that generated positon.
 	instance_create_layer(_x, _y, "Instances", _enemy);
+	var trap_instance = instance_create_layer(_x, _y, "Instances", _trap);
+	trap_instance.alarm[0] = spawn_trap_despawn;
 }

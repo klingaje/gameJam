@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_boss",
+  "%Name":"obj_spiderweb",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_boss",
+  "name":"obj_spiderweb",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objects/Game/Enemies.yy",
+    "name":"Traps",
+    "path":"folders/Objects/Game/Traps.yy",
   },
-  "parentObjectId":{
-    "name":"obj_enemy",
-    "path":"objects/obj_enemy/obj_enemy.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_boss",
-    "path":"sprites/spr_boss/spr_boss.yy",
+    "name":"spr_spiderweb",
+    "path":"sprites/spr_spiderweb/spr_spiderweb.yy",
   },
   "spriteMaskId":null,
   "visible":true,
