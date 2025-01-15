@@ -92,10 +92,10 @@ function player_movement()
 
 	// Normalize hspeed and vspeed
 	var _speed = sqrt(sqr(hspeed) + sqr(vspeed));
-	if(_speed > 10)
+	if(_speed > obj_hero.max_speed)
 	{
-		hspeed *= 10 / _speed;
-		vspeed *= 10 / _speed;
+		hspeed *= obj_hero.max_speed / _speed;
+		vspeed *= obj_hero.max_speed / _speed;
 	}
 
 	// If hspeed does not equal 0...

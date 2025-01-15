@@ -1,6 +1,8 @@
 // Set the maximum hitpoints that the player can have.
 hitpoints_max = 10;
 
+max_speed = 10;
+
 // Set the starting hitpoints of the player (to the max).
 hitpoints = hitpoints_max;
 
