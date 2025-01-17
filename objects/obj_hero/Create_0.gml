@@ -15,6 +15,8 @@ hero_shoot_cooldown = 30;
 hero_swipe_cooldown = 30;
 hero_trail_cooldown = 30;
 
+other_instance = other;
+
 // Function for the shooting weapon.
 hero_shoot = function()
 {
