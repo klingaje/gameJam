@@ -15,7 +15,7 @@ if (instance_exists(obj_upgrade))
 
 // Draw the shooting weapon icon, using the "unlocked"
 // property of the shooting weapon.
-draw_sprite(spr_shooting_attack_small, global.shooting[? "unlocked"], 40, 20);
+draw_sprite(spr_shooting_attack_small, global.hero_shooting[? "unlocked"], 40, 20);
 
 // Draw the trail weapon icon, using the "unlocked"
 // property of the trail weapon.

@@ -1,5 +1,5 @@
 // Define a function to execute the shooting attack.
-function shooting_attack() 
+function shooting_attack_boss() 
 {
 	// If an enemy is found...
 	if (instance_exists(nearest_enemy))
@@ -8,7 +8,7 @@ function shooting_attack()
 		var _direction = point_direction(x, y, nearest_enemy.x, nearest_enemy.y);
 	
 		// Get the angle we should start creating bullets aiming towards.
-		var _angle_difference = (global.hero_shooting[? "number_of_shots"] - 1) * 20;
+		var _angle_difference = (global.boss_shooting[? "number_of_shots"] - 1) * 20;
 	
 		// The starting angle.
 		var _angle = -_angle_difference / 2;
@@ -17,10 +17,10 @@ function shooting_attack()
 		audio_play_sound(snd_lightning_throw, 0, false);
 	
 		// Repeat the following code for each bullet we need to spawn.
-		repeat (global.hero_shooting[? "number_of_shots"])
+		repeat (global.boss_shooting[? "number_of_shots"])
 		{
 			// Create a bullet and assign it to temp variable _bullet.
-			var _bullet = instance_create_layer(x, y, "Instances", obj_hero_bullet);
+			var _bullet = instance_create_layer(x, y, "Instances", obj_boss_bullet);
 		
 			// Change values of the bullet...
 			with (_bullet) 

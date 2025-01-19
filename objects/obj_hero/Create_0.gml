@@ -24,10 +24,10 @@ hero_shoot = function()
 	if (nearest_distance < 1000)
 	{
 		// Reset the cooldown for this weapon.
-		hero_shoot_cooldown = max(global.shooting[? "attack_speed"], 1);
+		hero_shoot_cooldown = max(global.hero_shooting[? "attack_speed"], 1);
 
 		// If this weapon is unlocked...
-		if (global.shooting[? "unlocked"])
+		if (global.hero_shooting[? "unlocked"])
 		{
 			// Execute the function to handle this weapon.
 			shooting_attack();

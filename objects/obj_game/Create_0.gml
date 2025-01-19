@@ -20,7 +20,7 @@ global.level = 1;
 
 // Set the cooldown time for spawning enemies.
 global.enemy_spawn_speed = 60;
-global.trap_spawn_speed = 250;
+global.trap_spawn_speed = 650;
 global.trap_despawn_speed = 700;
 
 // Set starting enemy health bonus.
@@ -115,9 +115,33 @@ spawn_enemy = function()
 		// Increase the number of increments have been needed
 		_i++;
 	}
+	
+	
+	
+	var _a = obj_hero.x + lengthdir_x(1000, _dir);
+
+	// Then we get the position 1200 pixels away
+	// from the hero on the y axis.
+	var _b = obj_hero.y + lengthdir_y(1000, _dir);
+	
+	// Set a baseline variable to track how far the ray has to go to be outside the camera's view
+	var _c = 1;
+	
+	// Find if the spawn point is within the camera's view (plus a border of 100 units for the sprites)
+	// If it is, move it further so it is outside the view
+	while(camera_get_view_x(view_camera[view_current]) - 100 < _x &&  _x < camera_get_view_x(view_camera[view_current]) + camera_get_view_width(view_camera[view_current]) + 100 &&
+		camera_get_view_y(view_camera[view_current]) - 100 < _y &&  _y < camera_get_view_y(view_camera[view_current]) + camera_get_view_height(view_camera[view_current]) + 100)
+	{
+		// Reset the spawn coordinates to 400 units further in that direction
+		_a = obj_hero.x + lengthdir_x(1200 + _c * 400, _dir);
+		_b = obj_hero.y + lengthdir_y(1200 + _c * 400, _dir);
+		
+		// Increase the number of increments have been needed
+		_c++;
+	}
 
 	// Create an enemy at that generated positon.
 	instance_create_layer(_x, _y, "Instances", _enemy);
-	var trap_instance = instance_create_layer(_x, _y, "Instances", _trap);
+	var trap_instance = instance_create_layer(_a, _b, "Instances", _trap);
 	trap_instance.alarm[0] = spawn_trap_despawn;
 }
