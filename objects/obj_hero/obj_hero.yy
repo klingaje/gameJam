@@ -42,8 +42,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_hero_run",
-    "path":"sprites/spr_hero_run/spr_hero_run.yy",
+    "name":"spr_swarm",
+    "path":"sprites/spr_swarm/spr_swarm.yy",
   },
   "spriteMaskId":null,
   "visible":true,

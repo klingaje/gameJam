@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_shooting",
-    "path":"sprites/spr_shooting/spr_shooting.yy",
+    "name":"spr_mygga",
+    "path":"sprites/spr_mygga/spr_mygga.yy",
   },
   "spriteMaskId":null,
   "visible":true,
