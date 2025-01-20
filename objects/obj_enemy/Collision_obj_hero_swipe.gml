@@ -1,6 +1,6 @@
 // If our hitpoints is over 0,
 // AND we are not currently being hit.
-if (hitpoints > 0 && sprite_index != hit_sprite)
+if (hitpoints > 0)
 {
 	// Choose a random hit sound effect.
 	var _sound = choose(snd_melee_hit_1, snd_melee_hit_2, snd_melee_hit_3);

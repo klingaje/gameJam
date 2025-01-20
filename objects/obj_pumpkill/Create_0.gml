@@ -4,8 +4,8 @@ event_inherited();
 // Set speed for this enemy type.
 speed = 6;
 
-image_xscale = 4;
-image_yscale = 4;
+//image_xscale = 4;
+//image_yscale = 4;
 
 // Set max hitpoints for this enemy type.
 hitpoints_max = global.enemy_health_bonus;
