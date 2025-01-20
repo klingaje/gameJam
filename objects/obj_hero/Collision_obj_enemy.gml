@@ -1,5 +1,5 @@
 // If the hero is NOT currently being hit...
-if (sprite_index != spr_hero_hit_1)
+if (sprite_index != spr_hero_hit)
 {
 	// Reduce hitpoints.
 	hitpoints -= 1;

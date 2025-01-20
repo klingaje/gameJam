@@ -1,7 +1,7 @@
 image_blend = make_color_rgb(200, 50, 200); //bättre färg senare
 other_instance = other;
 
-if (sprite_index != spr_hero_hit_1)
+if (sprite_index != spr_hero_hit)
 {
 	// Reduce hitpoints.
 	hitpoints -= 3;
@@ -14,7 +14,7 @@ if (sprite_index != spr_hero_hit_1)
 	_text.color = c_red;
 	
 	// Change sprite index to hit.
-	sprite_index = spr_hero_hit_1;
+	sprite_index = spr_hero_hit;
 	// Reset image index.
 	image_index = 0;
 	
