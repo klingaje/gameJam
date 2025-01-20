@@ -33,9 +33,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_rooster_walk",
-    "path":"sprites/spr_rooster_walk/spr_rooster_walk.yy",
+    "name":"spr_bat",
+    "path":"sprites/spr_bat/spr_bat.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_bat",
+    "path":"sprites/spr_bat/spr_bat.yy",
+  },
   "visible":true,
 }

@@ -5,6 +5,6 @@ event_inherited();
 speed = 2;
 
 // Set sprites for this enemy type.
-walk_sprite = spr_rooster_walk;
-attack_sprite = spr_rooster_attack;
-hit_sprite = spr_rooster_hit;
+//walk_sprite = spr_rooster_walk;
+//attack_sprite = spr_rooster_attack;
+//hit_sprite = spr_rooster_hit;

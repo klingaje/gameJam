@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_pigun_walk",
-    "path":"sprites/spr_pigun_walk/spr_pigun_walk.yy",
+    "name":"spr_dragonfly",
+    "path":"sprites/spr_dragonfly/spr_dragonfly.yy",
   },
   "spriteMaskId":null,
   "visible":true,

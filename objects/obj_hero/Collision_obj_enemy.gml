@@ -12,20 +12,20 @@ if (sprite_index != spr_hero_hit)
 	_text.color = c_red;
 	
 	// Change sprite index to hit.
-	sprite_index = spr_hero_hit;
+	//sprite_index = spr_hero_hit;
 	// Reset image index.
 	image_index = 0;
 	
 	// With the enemy...
-	with (other) 
-	{
+	//with (other) 
+	//{
 		// Check if enemy is walking pigun.
-		if (sprite_index == spr_pigun_walk)
-		{
+	//	if (sprite_index == spr_pigun_walk)
+	//	{
 			// Change to attack sprite.
-			sprite_index = attack_sprite;
+	//		sprite_index = attack_sprite;
 			// Reset image index.
-			image_index = 0;
-		}
-	}
+	//		image_index = 0;
+	//	}
+	//}
 }

@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_pumpkill_walk",
-    "path":"sprites/spr_pumpkill_walk/spr_pumpkill_walk.yy",
+    "name":"spr_dragonfly",
+    "path":"sprites/spr_dragonfly/spr_dragonfly.yy",
   },
   "spriteMaskId":null,
   "visible":true,
