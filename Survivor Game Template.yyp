@@ -74,6 +74,7 @@
     {"id":{"name":"fnt_small","path":"fonts/fnt_small/fnt_small.yy",},},
     {"id":{"name":"Documentation","path":"notes/Documentation/Documentation.yy",},},
     {"id":{"name":"Note2","path":"notes/Note2/Note2.yy",},},
+    {"id":{"name":"obj_bird","path":"objects/obj_bird/obj_bird.yy",},},
     {"id":{"name":"obj_boss_bullet","path":"objects/obj_boss_bullet/obj_boss_bullet.yy",},},
     {"id":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},},
     {"id":{"name":"obj_button_audio","path":"objects/obj_button_audio/obj_button_audio.yy",},},

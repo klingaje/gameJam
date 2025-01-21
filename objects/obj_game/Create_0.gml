@@ -87,6 +87,14 @@ spawn_enemy = function()
 		_enemy = choose(obj_pigun, obj_pumpkill, obj_rooster);
 		_trap = choose(obj_spiderweb, obj_carplant);
 	}
+	
+	if (global.level > 6)
+	{
+		// Change the enemy type to either
+		// pigun, pumpkill or rooster.
+		_enemy = choose(obj_pigun, obj_pumpkill, obj_rooster, obj_bird);
+		_trap = choose(obj_spiderweb, obj_carplant);
+	}
 
 	// We want to spawn enemyes around the player.
 	// So we first get a random direction (0 to 360).
@@ -117,12 +125,12 @@ spawn_enemy = function()
 	}
 	
 	
-	
-	var _a = obj_hero.x + lengthdir_x(1000, _dir);
+	var _distance = random_range(600, 1800)
+	var _a = obj_hero.x + lengthdir_x(_distance, _dir);
 
 	// Then we get the position 1200 pixels away
 	// from the hero on the y axis.
-	var _b = obj_hero.y + lengthdir_y(1000, _dir);
+	var _b = obj_hero.y + lengthdir_y(_distance, _dir);
 	
 	// Set a baseline variable to track how far the ray has to go to be outside the camera's view
 	var _c = 1;
