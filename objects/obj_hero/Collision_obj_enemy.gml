@@ -29,3 +29,4 @@ if (sprite_index != spr_hero_hit)
 		}
 	}
 }
+alarm[2]=30;
