@@ -13,5 +13,7 @@ if(irandom(9) == 0)
 
 // Create the chosen drop.
 for (var i = 0; i < 20; i++) {
-	instance_create_layer(x, y, "Instances", _drop);
+    var offset_x = random_range(-10, 10);  // Random horizontal offset between -10 and 10
+    var offset_y = random_range(-10, 10);  // Random vertical offset between -10 and 10
+    instance_create_layer(x + offset_x, y + offset_y, "Instances", _drop);
 }
