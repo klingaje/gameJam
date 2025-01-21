@@ -135,6 +135,7 @@
     {"id":{"name":"snd_melee_hit_1","path":"sounds/snd_melee_hit_1/snd_melee_hit_1.yy",},},
     {"id":{"name":"snd_melee_hit_2","path":"sounds/snd_melee_hit_2/snd_melee_hit_2.yy",},},
     {"id":{"name":"snd_melee_hit_3","path":"sounds/snd_melee_hit_3/snd_melee_hit_3.yy",},},
+    {"id":{"name":"snd_music_game_mosquito","path":"sounds/snd_music_game_mosquito/snd_music_game_mosquito.yy",},},
     {"id":{"name":"snd_music_game","path":"sounds/snd_music_game/snd_music_game.yy",},},
     {"id":{"name":"snd_music_menu","path":"sounds/snd_music_menu/snd_music_menu.yy",},},
     {"id":{"name":"snd_pickup_1","path":"sounds/snd_pickup_1/snd_pickup_1.yy",},},
