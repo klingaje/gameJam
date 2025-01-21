@@ -10,9 +10,9 @@ nearest_enemy = obj_hero;
 nearest_distance = 2000;
 
 // Set sprites for this enemy type.
-walk_sprite = spr_rooster_walk;
-attack_sprite = spr_pigun_attack;
-hit_sprite = spr_pigun_hit;
+walk_sprite = spr_boss;
+attack_sprite = spr_boss;
+hit_sprite = spr_boss;
 
 boss_shoot_cooldown = 50;
 

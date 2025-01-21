@@ -15,4 +15,5 @@ hitpoints = hitpoints_max;
 image_xscale = 10;
 image_yscale = 10;
 
+
 image_blend = make_color_rgb(255, 100, 100);
