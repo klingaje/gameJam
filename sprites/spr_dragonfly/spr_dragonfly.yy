@@ -1,8 +1,8 @@
 {
   "$GMSprite":"",
   "%Name":"spr_dragonfly",
-  "bboxMode":0,
-  "bbox_bottom":130,
+  "bboxMode":2,
+  "bbox_bottom":143,
   "bbox_left":28,
   "bbox_right":137,
   "bbox_top":33,

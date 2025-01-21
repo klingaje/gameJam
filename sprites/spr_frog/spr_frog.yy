@@ -1,8 +1,8 @@
 {
   "$GMSprite":"",
   "%Name":"spr_frog",
-  "bboxMode":0,
-  "bbox_bottom":132,
+  "bboxMode":2,
+  "bbox_bottom":144,
   "bbox_left":28,
   "bbox_right":101,
   "bbox_top":35,
