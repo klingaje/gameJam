@@ -21,7 +21,7 @@ if (hitpoints > 0)
 	_text.text = -global.swipe[? "damage"];
 
 	// Set sprite to hit sprite.
-	sprite_index = hit_sprite;
+	//sprite_index = hit_sprite;
 	image_index = 0;
 
 	// If hitpoints has reached zero...

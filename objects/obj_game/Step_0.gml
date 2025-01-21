@@ -84,7 +84,7 @@ function spawnBosses(bosNr){
 	if(!global.paused){
 	//show_debug_message(string(bosNr));
 	//,obj_miniboss2,obj_miniboss3,obj_miniboss4,obj_boss paste in later
-	bossArray = [obj_miniboss1, obj_boss, obj_miniboss1, obj_miniboss1, obj_miniboss1];
+	bossArray = [obj_miniboss1, obj_miniboss2, obj_miniboss3, obj_miniboss4, obj_boss];
 	instance_create_layer(random(room_width), random(room_height), "Instances", bossArray[bosNr-1]);
 	//replace 0 with bosNr-1
 	}

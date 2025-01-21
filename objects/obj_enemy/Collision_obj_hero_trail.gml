@@ -22,7 +22,7 @@ if (hitpoints > 0)
 	_text.text = -global.trail[? "damage"];
 
 	// Set sprite to the hit sprite.
-	sprite_index = hit_sprite;
+	//sprite_index = hit_sprite;
 	image_index = 0;
 
 	// If hitpoints has reached zero...
