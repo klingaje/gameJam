@@ -8,7 +8,7 @@ function shooting_attack()
 		var _direction = point_direction(x, y, nearest_enemy.x, nearest_enemy.y);
 	
 		// Get the angle we should start creating bullets aiming towards.
-		var _angle_difference = (global.hero_shooting[? "number_of_shots"] - 1) * 20;
+		var _angle_difference = (global.hero_shooting[? "number_of_shots"] - 1) * 5;
 	
 		// The starting angle.
 		var _angle = -_angle_difference / 2;
@@ -36,7 +36,7 @@ function shooting_attack()
 			}
 		
 			// Increment the angle for the next bullet.
-			_angle += 20;
+			_angle += 5;
 		}
 	}
 }

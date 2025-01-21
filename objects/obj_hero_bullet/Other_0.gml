@@ -1,4 +1,4 @@
-// Checks if game is not paused.
+ // Checks if game is not paused.
 if (!global.paused)
 {
 	// Reduces the image alpha.

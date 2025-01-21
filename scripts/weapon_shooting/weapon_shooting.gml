@@ -60,7 +60,7 @@ function weapon_shooting_upgrades(_upgrade_list)
 	var _attack_speed = ds_map_find_value(global.hero_shooting, "attack_speed");
 
 	// If attack speed is over 5...
-	if (_attack_speed > 5)
+	if (_attack_speed > 1)
 	{
 		// Create map to strore the upgrade.
 		var _map = ds_map_create();
@@ -82,7 +82,7 @@ function weapon_shooting_upgrades(_upgrade_list)
 	var _number_of_shots = ds_map_find_value(global.hero_shooting, "number_of_shots");
 
 	// If the number of shots is under 7...
-	if (_number_of_shots < 7)
+	if (_number_of_shots < 700)
 	{
 		// Create map to strore the upgrade.
 		var _map = ds_map_create();
@@ -105,17 +105,17 @@ function weapon_shooting_upgrades(_upgrade_list)
 	var _damage = ds_map_find_value(global.hero_shooting, "damage");
 
 	// If damage is under 4...
-	if (_damage < 4)
+	if (_damage < 400)
 	{
 		// Create map to strore the upgrade.
 		var _map = ds_map_create();
 	
 		// Upgrade to increase damage.
-		ds_map_replace(_map, "description", "Increase Damage");
+		ds_map_replace(_map, "description", "Increase Damage + 50%");
 		ds_map_replace(_map, "title", "DAMAGE");
 		ds_map_replace(_map, "object", global.hero_shooting);
 		ds_map_replace(_map, "key", "damage");
-		ds_map_replace(_map, "amount", 0.4);
+		ds_map_replace(_map, "amount", 0.5);
 		ds_map_replace(_map, "icon", spr_shooting_attack_big);
 		ds_map_replace(_map, "weapon_name", "PROJECTILE");
 	
