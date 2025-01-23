@@ -151,6 +151,7 @@
     {"id":{"name":"spr_arcing_attack_small","path":"sprites/spr_arcing_attack_small/spr_arcing_attack_small.yy",},},
     {"id":{"name":"spr_arcing","path":"sprites/spr_arcing/spr_arcing.yy",},},
     {"id":{"name":"spr_Bakgrund","path":"sprites/spr_Bakgrund/spr_Bakgrund.yy",},},
+    {"id":{"name":"spr_Bakgrund2","path":"sprites/spr_Bakgrund2/spr_Bakgrund2.yy",},},
     {"id":{"name":"spr_bat","path":"sprites/spr_bat/spr_bat.yy",},},
     {"id":{"name":"spr_bird","path":"sprites/spr_bird/spr_bird.yy",},},
     {"id":{"name":"spr_boss","path":"sprites/spr_boss/spr_boss.yy",},},
