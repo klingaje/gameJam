@@ -2,6 +2,11 @@
 global.mouse_anchor_x = 0;
 global.mouse_anchor_y = 0;
 
+if (!variable_global_exists("is_sound_playing"))
+{
+    global.is_sound_playing = false;
+}
+
 // Declare player movement script.
 function player_movement() 
 {
@@ -123,4 +128,23 @@ function player_movement()
 			sprite_index = spr_hero_idle;
 		}
 	}
+	
+	if (hspeed != 0 || vspeed != 0)
+    {
+        // If the player is moving and the sound isn't playing, start it
+        if (!global.is_sound_playing)
+        {
+            audio_play_sound(snd_music_game_mosquito, 1, true); // Play the sound in a loop
+            global.is_sound_playing = true;
+        }
+    }
+    else
+    {
+        // If the player stops and the sound is playing, stop it
+        if (global.is_sound_playing)
+        {
+            audio_stop_sound(snd_music_game_mosquito);
+            global.is_sound_playing = false;
+        }
+    }
 }
