@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.379062,
+  "duration":1.752,
   "name":"snd_pickup_1",
   "parent":{
     "name":"Sounds",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_pickup_1.wav",
+  "soundFile":"snd_pickup_1.mp3",
   "type":0,
   "volume":1.0,
 }

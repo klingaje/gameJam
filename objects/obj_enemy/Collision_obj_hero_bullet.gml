@@ -36,6 +36,7 @@ if (hitpoints > 0)
 	// If our hitpoints has reached zero...
 	if (hitpoints <= 0)
 	{
+		audio_play_sound(snd_death, 1, false);
 		// Destroy this instance.
 		instance_destroy();
 	}
