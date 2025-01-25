@@ -91,6 +91,6 @@ hero_trail = function()
 }
 
 // Create shadow object to follow.
-var _shadow = instance_create_layer(x, y, "Shadows", obj_shadow);
+var _shadow = instance_create_layer(x, y, "Shadows", obj_shadow_2);
 // Set shadow owner.
 _shadow.owner_object = self;
