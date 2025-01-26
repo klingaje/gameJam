@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_frog",
-    "path":"sprites/spr_frog/spr_frog.yy",
+    "name":"spr_frog_miniboss",
+    "path":"sprites/spr_frog_miniboss/spr_frog_miniboss.yy",
   },
   "spriteMaskId":null,
   "visible":true,

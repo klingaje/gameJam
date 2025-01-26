@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_dragonfly",
-    "path":"sprites/spr_dragonfly/spr_dragonfly.yy",
+    "name":"spr_dragonfly_miniboss",
+    "path":"sprites/spr_dragonfly_miniboss/spr_dragonfly_miniboss.yy",
   },
   "spriteMaskId":null,
   "visible":true,

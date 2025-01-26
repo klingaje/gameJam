@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bat",
-    "path":"sprites/spr_bat/spr_bat.yy",
+    "name":"spr_bat_miniboss",
+    "path":"sprites/spr_bat_miniboss/spr_bat_miniboss.yy",
   },
   "spriteMaskId":null,
   "visible":true,
